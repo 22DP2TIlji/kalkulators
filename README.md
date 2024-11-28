@@ -1,4 +1,3 @@
-# kalkulators
-## Kalkulators ar:
+# Kalkulators ar:
 - stradajošām funkcijām
 - vēsturi, kuru var dzēst pēc vēlēšanās.
