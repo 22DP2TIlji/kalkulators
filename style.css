@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8; /* Light blue background */
+    margin: 0;
+}
+
+.calculator {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.display input {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    font-size: 2rem;
+    border: 2px solid #87c7f0; /* Light blue border */
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #e9f5fd; /* Very light blue background */
+    color: #2c3e50; /* Dark text for readability */
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #a3c9f2; /* Light blue buttons */
+    border: 1px solid #87c7f0; /* Light blue border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    color: #2c3e50; /* Dark text for buttons */
+}
+
+.btn:hover {
+    background-color: #89bff3; /* Hover effect - slightly darker blue */
+}
+
+.operator {
+    background-color: #4fa3f7; /* Bright blue for operators */
+    color: white;
+}
+
+.operator:hover {
+    background-color: #3f8dce; /* Darker blue on hover */
+}
+
+.history {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#history-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#history-list li {
+    background-color: #e3f7fd; /* Light blue background for history items */
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.history button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4fa3f7; /* Blue for clear history button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+}
+
+.history button:hover {
+    background-color: #3f8dce; /* Darker blue on hover */
+}
+
+.history button:active {
+    transform: scale(0.95); /* Shrinks the button when clicked */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* "Pressed" look */
+}
